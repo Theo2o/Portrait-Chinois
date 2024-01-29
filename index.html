@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+        <title>Portrait chinois</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+      <!--Arrière plan animé-->
+      <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+     </div>
+     <!--Arrière plan animé-->
+
+
+     <!--Première page-->
+     <section>
+      <header class="header">
+        
+        <div class="ecran">
+            <div class="carte" data-tilt>
+                <h2>Mon portrait chinois</h2>
+                <p>Réalisé par Théo De Oliveira</p>
+                <button onclick="scrollToMoi()" class="start-button">Commencer</button>
+            </div>
+        </div>
+      </header>
+    </section>
+    <!--Première page-->
+
+      
+      <button onclick="topFunction()" id="scrollToTopBtn" title="Retour en haut de la page">↑</button>
+
+
+      <div class="liste-analogies" id="commencer"></div>
+
+      
+
+      <!--Pas utilisé dans cette version du site :-->
+
+      <div class="popup popup-invisible">
+        <button class="cache-fenetre">&times;</button>
+      </div>
+
+
+    <section>
+      <div class="formulaire">
+      <h1>À vous de jouer !</h1><br><br>
+      <form>
+        <label for="analogiesQuestion">
+          <h2>Si j'étais</h2>
+        </label>
+        <input type="text" id="analogies" maxlength="20" required>
+        <br>
+    
+        <label for="analogiesReponse">
+          <h2>Je serais</h2>
+        </label>
+        <input type="text" id="valeurAnalogies" maxlength="20" required>
+        <br>
+    
+        <label for="analogiesTexte">
+          <h2>Explication</h2>
+        </label>
+        <input type="text" id="letexte" maxlength="100" required>
+        <br>
+    
+        <label for="analogiesImage">
+          <h2>Lien de votre image</h2>
+        </label>
+        <input type="text" id="limage" maxlength="255" required>
+        <br>
+
+        <label for="email">
+          <h2>Votre adresse e-mail</h2>
+        </label>
+        <input type="text" id="lemail" maxlength="255" required>
+        <br>
+    
+        <input type="submit" value="envoyer" id="envoi">
+      </form>
+      <br><br><br>
+      <button id="mentionLegaleBtn">Mention légale</button>
+
+      <div class="popup" id="mentionLegalePopup">
+      <div class="popup-content">
+          <span class="close" id="closePopup">&times;</span>
+          <p class="mentions"><strong>Réalisé par </strong>Théo De Oliveira<br><br><strong>Crédit photo(7) :</strong> Théo De Oliveira<br><br><strong>Fond animé :</strong> wweb.dev<br><br><strong>Inspiration carte page d'accueil :</strong> Matthieu Mulumba (ETC SCHOOL)<br><br><strong>Hébergeur :</strong> Université Gustave Eiffel<br><br><strong>Université Gustave Eiffel :</strong> 5 boulevard Descartes - Champs-sur-Marne - 77454 Marne-la-Vallée Cedex2
+            - Tél : 01.60.95.75.00 - Fax : 01.60.95.75.75<br><br><strong>Législation relative aux données à caractère personnel :</strong> Le formulaire permettant la création d'une analogie personnalisée recueille votre adresse e-mail et votre adresse IP. Pour toute question concernant la collecte ou le traitement de vos données à caractère personnel par l'UPEM, vous pouvez contacter la personne responsable du traitement des données, à savoir Philippe Gambette (philippe.gambette@univ-eiffel.fr). Les fichiers détenus par l'UPEM qui contiennent des données à caractère personnel ne seront jamais transmis à des tiers et ne feront jamais l'objet de commercialisation.<br><br>
+
+            <strong>©2024 Tous droits réservés par Théo De Oliveira.</strong><br></p>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="Crea"></div>
+    </section>
+    
+      
+  
+
+
+  
+
+    </body>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+      
+</html>
